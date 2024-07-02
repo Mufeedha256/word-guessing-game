@@ -47,7 +47,7 @@ while repeat == True :
           if turns ==0:
              print("You loose")
              print("The correct word is",word)
-             play_again = input("Do you want to play again?Type y for yes and n for no")
-             if play_again == "n":
-               repeat = False
+    play_again = input("Do you want to play again?Type y for yes and n for no")
+    if play_again == "n":
+        repeat = False
             
