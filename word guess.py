@@ -13,8 +13,6 @@ while repeat == True :
     words = vegetables + fruits + animals + things
     word = random.choice(words)
     print("your word has", len(word),"letters.")
-
-    print()
     if word in vegetables:
       print("Hint: I am a vegetable")
     elif word in fruits:
@@ -30,9 +28,9 @@ while repeat == True :
        failed = 0
        for char in word:
             if char in guesses:
-               print(char)
+               print(char,end=' ')
             else:
-               print("_")
+               print("_",end=' ')
                failed += 1
        if failed == 0:
           print("You win")
@@ -47,7 +45,7 @@ while repeat == True :
           if turns ==0:
              print("You loose")
              print("The correct word is",word)
-    play_again = input("Do you want to play again?Type y for yes and n for no")
+    play_again = input("Do you want to play again?Type y for yes and n for no:")
     if play_again == "n":
         repeat = False
             
